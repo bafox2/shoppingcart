@@ -49,17 +49,19 @@ test('shopping cart total works', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
+
 test("input has correct values", () => {
   const onChangeMock = jest.fn();
   // render(<Header onChange={onChangeMock} />);
   const input = screen.getByRole("textbox");
-
   userEvent.type(input, "Whale");
 
   expect(input).toHaveValue("Whale");
 });
 
+
 test('increment/decrement works', () => {
+  //will need some type of mocking can combine with a previous test 
   render(<App />);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
