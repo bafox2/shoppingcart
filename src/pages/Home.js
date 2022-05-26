@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "../css/HomePage.module.css";
+import styles from "../css/Home.module.css";
 // import landingPic from "../images/rtx-3090.jpg";
 
 const Home = (props) => {
@@ -11,7 +11,7 @@ const Home = (props) => {
                     // style={{ backgroundImage: `url(${landingPic})` }}
                     className={styles.background}
                 >
-                    <h1 className={styles.s1Title}>Welcome to </h1>
+                    <h1 className={styles.s1Title}>Welcome home</h1>
                     <p className={styles.s1Subtitle}>
                         Now available for preorder, shipping December, 2020.
                     </p>
