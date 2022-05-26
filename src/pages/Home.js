@@ -11,7 +11,7 @@ const Home = (props) => {
                     // style={{ backgroundImage: `url(${landingPic})` }}
                     className={styles.background}
                 >
-                    <h1 className={styles.s1Title}>Welcome home</h1>
+                    <h1 className={styles.s1Title}>Welcome Home</h1>
                     <p className={styles.s1Subtitle}>
                         Now available for preorder, shipping December, 2020.
                     </p>
