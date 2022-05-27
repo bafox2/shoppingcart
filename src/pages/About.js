@@ -4,17 +4,16 @@ import styles from "../css/About.module.css";
 
 const About = (props) => {
     return (
-        <div className={styles.container}>
-            <main>
-                <section
-                    // style={{ backgroundImage: `url(${landingPic})` }}
-                    className={styles.background}
-                >
-                    <h1 className={styles.s1Title}>Welcome to About</h1>
+        <div>
+        <main>
+                <h1>Welcome to ABou</h1>
+<h2>This farm was started :</h2>
+<h2>This farm uses the techniques :</h2>
+<h2>In the future we hope to become :</h2>
+            
+        </main>
+    </div>
 
-                </section>
-            </main>
-        </div>
     );
 };
 

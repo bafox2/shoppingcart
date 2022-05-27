@@ -4,9 +4,10 @@ import styles from "../css/Home.module.css";
 
 const Home = (props) => {
     return (
-        <div className={styles.container}>
-            <main>
-            </main>
+        <div >
+            <h1>
+                home
+            </h1>
         </div>
     );
 };

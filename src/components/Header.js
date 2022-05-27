@@ -5,8 +5,14 @@ import styles from "../css/Header.module.css";
 
 const Header = (props) => {
     return (
-        <header className={styles.header}>
-<p>asdfasdfas</p>
+        <header >
+<p>header tab</p>
+<Link to='/'><p>logo</p></Link>
+<nav>
+    <Link to='about'>About</Link>
+    <Link to='contact'>Contact</Link>
+    <Link to='shop'>Shop</Link>
+</nav>
         </header>
     );
 };
