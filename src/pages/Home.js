@@ -6,7 +6,6 @@ const Home = (props) => {
     return (
         <div className={styles.container}>
             <main>
-
             </main>
         </div>
     );

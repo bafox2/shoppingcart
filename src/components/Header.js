@@ -6,7 +6,7 @@ import styles from "../css/Header.module.css";
 const Header = (props) => {
     return (
         <header className={styles.header}>
-header
+<p>asdfasdfas</p>
         </header>
     );
 };
