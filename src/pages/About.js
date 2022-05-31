@@ -5,14 +5,14 @@ import styles from "../css/About.module.css";
 const About = (props) => {
     return (
         <div>
-        <main>
+            <main>
                 <h1>Welcome to ABou</h1>
-<h2>This farm was started :</h2>
-<h2>This farm uses the techniques :</h2>
-<h2>In the future we hope to become :</h2>
-            
-        </main>
-    </div>
+                <p>This farm was started :</p>
+                <p>This farm uses the techniques :</p>
+                <p>In the future we hope to become :</p>
+
+            </main>
+        </div>
 
     );
 };

@@ -5,9 +5,10 @@ import styles from "../css/Home.module.css";
 const Home = (props) => {
     return (
         <div >
-            <h1>
-                home
-            </h1>
+            <main>
+                <h1>Welcome to Ohio's premiere sustainable farming boutique!</h1>
+                <p>Shop, learn, or sign up for a tour here!</p>
+            </main>
         </div>
     );
 };

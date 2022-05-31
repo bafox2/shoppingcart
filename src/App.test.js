@@ -3,8 +3,8 @@ import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
 import App from './App';
 import { MemoryRouter } from 'react-router-dom';
-//import Searchbox from components
 
+//,ake sure to wrap the router in memoryrouter
 
 test('renders clicking link takes you to right spot', () => {
   render(<MemoryRouter>
