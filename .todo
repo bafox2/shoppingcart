@@ -13,3 +13,12 @@ update fonts in the index.css
 https://www.framer.com/motion/
 
 using as spiritual guide https://github.com/amielfilarca/shopping-cart/tree/main/src
+
+{
+"trailingComma": "es5",
+"tabWidth": 2,
+"semi": false,
+"singleQuote": true,
+"bracketLine": true,
+"printWidth": 80
+}
