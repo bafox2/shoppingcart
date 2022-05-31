@@ -10,8 +10,7 @@ test('renders clicking link takes you to right spot', () => {
   render(<MemoryRouter>
     <App />
   </MemoryRouter >);
-  const link = screen.getByRole("Link", { name: "Shop" });
-  console.log(link)
+  const link = screen.getByRole("link", { name: "Shop" });
   userEvent.click(link);
   expect(screen.getByRole("heading").textContent).toMatch(/Weoc9me to shop/i);
 });
@@ -24,11 +23,13 @@ test('renders clicking link takes you to right spot', () => {
 //   </>
 // ));
 
-// test('renders header across all pages', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
+test('renders header across all pages', () => {
+  render(<MemoryRouter>
+    <App />
+  </MemoryRouter >);
+  const linkElement = screen.getByText(/header/i);
+  expect(linkElement).toBeInTheDocument();
+});
 
 // test('correct number of items render', () => {
 //   //use the mock thing like from above
@@ -43,7 +44,6 @@ test('renders clicking link takes you to right spot', () => {
 //   const button = screen.getByRole("button", { name: "Click Me" });
 //   userEvent.click(button);
 //   expect(screen.getByRole("heading").textContent).toMatch(/radical rhinos/i);
-
 // });
 
 // test('shopping cart total works', () => {
@@ -59,7 +59,6 @@ test('renders clicking link takes you to right spot', () => {
 //   // render(<Header onChange={onChangeMock} />);
 //   const input = screen.getByRole("textbox");
 //   userEvent.type(input, "Whale");
-
 //   expect(input).toHaveValue("Whale");
 // });
 

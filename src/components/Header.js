@@ -6,13 +6,13 @@ import styles from "../css/Header.module.css";
 const Header = (props) => {
     return (
         <header >
-<p>header tab</p>
-<Link to='/'><p>logo</p></Link>
-<nav>
-    <Link to='about'>About</Link>
-    <Link to='contact'>Contact</Link>
-    <Link to='shop'>Shop</Link>
-</nav>
+            <p>header tab</p>
+            <Link to='/'><p>logo</p></Link>
+            <nav>
+                <Link to='about'>About</Link>
+                <Link to='contact'>Contact</Link>
+                <Link to='Shop'>Shop</Link>
+            </nav>
         </header>
     );
 };
