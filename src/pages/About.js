@@ -10,7 +10,6 @@ const About = (props) => {
                 <p>This farm was started :</p>
                 <p>This farm uses the techniques :</p>
                 <p>In the future we hope to become :</p>
-
             </main>
         </div>
 

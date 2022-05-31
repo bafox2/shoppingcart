@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../css/Header.module.css";
-// import landingPic from "../images/rtx-3090.jpg";
+
+// will have a tough time setting up the search bar algo
 
 const Searchbar = (props) => {
     return (
