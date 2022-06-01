@@ -11,13 +11,13 @@ const traditionalProduce = [
     {
         name: 'Habnero',
         category: 'traditionalproduce',
-        amount: '1 pound',
-        price: '$1/pound',
+        amount: '1 Oz',
+        price: '$12.48',
         description: 'Seed from Mayan origin',
         image: 'https://photos.app.goo.gl/R8Q9WymSF8RvEJRW9',
     },
     {
-        name: 'Garlic Infrint of Jalapeno',
+        name: 'Jalapeno',
         category: 'traditionalproduce',
         amount: '1 pound',
         price: '$1/pound',
