@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../css/Item.module.css";
 import { Link } from "react-router-dom";
 
-const Header = (props) => {
+const Item = (props) => {
     return (
         <card >
             <Link to={`/${props.category}`}><p>Back to {props.category}</p></Link>
@@ -15,4 +15,4 @@ const Header = (props) => {
     );
 };
 
-export default Header;
+export default Item;

@@ -2,9 +2,12 @@ import { render, screen } from '@testing-library/react';
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
 import App from './App';
+import Shop from './pages/Shop';
 import { MemoryRouter } from 'react-router-dom';
+import Item from './components/Item'
 
 //,ake sure to wrap the router in memoryrouter
+
 
 test('renders clicking link takes you to right spot', () => {
   render(<MemoryRouter>
@@ -12,7 +15,7 @@ test('renders clicking link takes you to right spot', () => {
   </MemoryRouter >);
   const link = screen.getByRole("link", { name: "Shop" });
   userEvent.click(link);
-  expect(screen.getByRole("heading").textContent).toMatch(/Weoc9me to shop/i);
+  expect(screen.getByRole("heading").textContent).toMatch(/shop/i);
 });
 
 // //this will mock the items         uses model https://github.com/TheOdinProject/theodinproject/blob/main/app/javascript/components/project-submissions/components/__tests__/submissions-list.test.jsx
@@ -31,12 +34,13 @@ test('renders header across all pages', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-// test('correct number of items render', () => {
-//   //use the mock thing like from above
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
+test('correct number of items render', () => {
+
+  //use the mock thing like from above
+  render(<Shop></Shop>);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
 
 // test('item renders with correct header', () => {
 //   //will need some type of mocking 
