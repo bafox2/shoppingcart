@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../css/Contact.module.css";
-// import landingPic from "../images/rtx-3090.jpg";
 
 const Contact = (props) => {
     return (
