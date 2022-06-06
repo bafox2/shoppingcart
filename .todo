@@ -1,8 +1,7 @@
 Immediate
 figure out routing for the shop page -> categories -> item itself
-format tests
+format tests for shoppingcart
 start styling
-pick colors
 do shoppingcart
 add animations
 
@@ -10,7 +9,8 @@ Eventually
 https://www.framer.com/motion/
 
 using as spiritual guide https://github.com/amielfilarca/shopping-cart/tree/main/src
-
+design https://www.figma.com/file/mCCYfQSsRsO2mGUtMOt2xb/Plant-Shop-Website-(Practice-%23001)-(Community)?node-id=0%3A1
+and https://www.figma.com/file/Z64ExRHWJ7NyBHhizcvWG7/Future-G.-Shop-By-Project-Manage-Rakib-Hasan-(Community)?node-id=0%3A1 
 
 prettier
 {

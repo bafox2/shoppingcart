@@ -11,7 +11,7 @@ const Header = (props) => {
             <nav>
                 <Link to='about'>About</Link>
                 <Link to='contact'>Contact</Link>
-                <Link to='Shop'>Shop</Link>
+                <Link to='shop'>Shop</Link>
             </nav>
         </header>
     );

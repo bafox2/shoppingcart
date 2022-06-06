@@ -14,15 +14,6 @@ import GreenBerry from '../images/GreenBerry.jpg'
 
 const traditionalProduce = [
     {
-        name: 'Cherry Tomatoes',
-        category: 'traditionalproduce',
-        amount: '1 pound',
-        price: '$1/pound',
-        description: 'Seed from Mayan origin',
-        imageurl: 'https://photos.app.goo.gl/1BLDCQV6bJBQWPeu9',
-        imageref: CherryTomato,
-    },
-    {
         name: 'Habnero',
         category: 'traditionalproduce',
         amount: '1 Oz',
@@ -30,6 +21,15 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/R8Q9WymSF8RvEJRW9',
         imageref: Habnero,
+    },
+    {
+        name: 'Cherry Tomatoes',
+        category: 'traditionalproduce',
+        amount: '1 pound',
+        price: '$1/pound',
+        description: 'Seed from Mayan origin',
+        imageurl: 'https://photos.app.goo.gl/1BLDCQV6bJBQWPeu9',
+        imageref: CherryTomato,
     },
     {
         name: 'Jalapeno',

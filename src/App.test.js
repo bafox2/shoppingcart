@@ -19,14 +19,6 @@ test('renders clicking link takes you to right spot', () => {
   expect(screen.getByRole("heading").textContent).toMatch(/shop/i);
 });
 
-// //this will mock the items         uses model https://github.com/TheOdinProject/theodinproject/blob/main/app/javascript/components/project-submissions/components/__tests__/submissions-list.test.jsx
-// jest.mock('../items', () => ({ item, isDashboardView }) => (
-//   <>
-//     <div data-test-id="item">{item.id}</div>
-//     <div data-test-id="dashboard">{isDashboardView.toString()}</div>
-//   </>
-// ));
-
 test('renders header across all pages', () => {
   render(<MemoryRouter>
     <App />
@@ -39,7 +31,7 @@ test('correct number of items render', () => {
   const listlength = allItems.length
   //use the mock thing like from above
   render(<Shop></Shop>);
-  const items = screen.getAllByRole('item');
+  const items = screen.getAllByRole('listitem');
   expect(items).toHaveLength(listlength)
 });
 
