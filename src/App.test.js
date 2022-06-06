@@ -4,6 +4,7 @@ import userEvent from "@testing-library/user-event";
 import App from './App';
 import Shop from './pages/Shop';
 import { MemoryRouter } from 'react-router-dom';
+import allItems from './itemData/allItems'
 import Item from './components/Item'
 
 //,ake sure to wrap the router in memoryrouter
@@ -35,11 +36,11 @@ test('renders header across all pages', () => {
 });
 
 test('correct number of items render', () => {
-
+  const listlength = allItems.length
   //use the mock thing like from above
   render(<Shop></Shop>);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const items = screen.getAllByRole('item');
+  expect(items).toHaveLength(listlength)
 });
 
 // test('item renders with correct header', () => {

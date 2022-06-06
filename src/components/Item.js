@@ -2,16 +2,17 @@ import React from "react";
 import styles from "../css/Item.module.css";
 import { Link } from "react-router-dom";
 
+//might want to add a category for each individual categorty
+
 const Item = (props) => {
     return (
-        <card >
-            <Link to={`/${props.category}`}><p>Back to {props.category}</p></Link>
-            <h1>{props.name}</h1>
+        <div role='item'>
+            <p>{props.name}</p>
             <p>{props.description}</p>
             <p>{props.amount} for</p>
             <p>{props.price}</p>
-            <img alt='item ' href={props.picture} />
-        </card>
+            <img alt='item' src={props.picture} />
+        </div>
     );
 };
 
