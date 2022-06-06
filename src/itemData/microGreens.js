@@ -1,14 +1,14 @@
-import { Basil, Dill, Hyssop, HoneydewSage, LemonThyme, AfricanBlueBasil } from '../images/'
-import Wheatgrass from './images/AfricanBlueBasil.jpg'
 
-function importAll(r) {
-    return r.keys().map(r);
-}
+import Wheatgrass from '../images/Wheatgrass.jpg'
+import BullsBlood from '../images/BullsBlood.jpg'
+import Basil from '../images/Basil.jpg'
+import Nasturtium from '../images/Nasturtium.jpg'
+import BlueBasil from '../images/AfricanBlueBasil.jpg'
+import Dill from '../images/Dill.jpg'
+import LemonThyme from '../images/LemonThyme.jpg'
+import HoneydewSage from '../images/HoneydewSage.jpg'
+import Hyssop from '../images/Hyssop.jpg'
 
-const images = importAll(require.context('../images/', false, /\.(png|jpe?g|svg)$/));
-
-
-//bullblood nasturtium
 const microgreens = [
     {
         name: 'Wheatgrass',
@@ -28,7 +28,7 @@ const microgreens = [
         cartprice: '6.71',
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/6MZLDEZLPFFD4B8V7',
-        imageref: '',
+        imageref: BullsBlood
     },
     {
         name: "Basil",
@@ -48,7 +48,7 @@ const microgreens = [
         cartprice: '4.94',
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/qAs4hnsZmp2KZ8AR8',
-        imageref: '',
+        imageref: Nasturtium
     },
     {
         name: "African Blue Basil",
@@ -58,7 +58,7 @@ const microgreens = [
         cartprice: '7.26',
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/oHaSkrrHYQaDxhMX9',
-        imageref: '',
+        imageref: BlueBasil
     },
     {
         name: "Dill",
@@ -68,7 +68,7 @@ const microgreens = [
         cartprice: '.71',
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/oA4KJEjf91dKnDhaA',
-        imageref: '',
+        imageref: Dill
     },
     {
         name: "Lemon Thyme",
@@ -78,7 +78,7 @@ const microgreens = [
         cartprice: '6.71',
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/oA4KJEjf91dKnDhaA',
-        imageref: '',
+        imageref: LemonThyme
     },
     {
         name: "Honeydew Sage",
@@ -88,7 +88,7 @@ const microgreens = [
         cartprice: '6.71',
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/ecGfhGnMr2K7HnmG8',
-        imageref: '',
+        imageref: HoneydewSage
     },
     {
         name: "Hyssop",
@@ -97,7 +97,7 @@ const microgreens = [
         price: '$4.98',
         cartprice: '6.71',
         description: 'Seed from Mayan origin',
-        imageurl: 'https://photos.app.goo.gl/afJo1onDYqkMjNqn7',
+        imageref: Hyssop,
     }
 ]
 export default microgreens

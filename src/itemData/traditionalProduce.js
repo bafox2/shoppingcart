@@ -1,4 +1,17 @@
-import { Carrot, CherryTomato, CoolMushroom, Jalapeno, Leek, Peas, Raddish, Raspberry, Habnero, GreenStrawberry } from '../images/'
+import CherryTomato from '../images/CherryTomato.jpg'
+import Habnero from '../images/Habanero.jpg'
+import CoolMushroom from '../images/CoolMushroom.jpg'
+import Peas from '../images/Peas.jpg'
+import Raspberry from '../images/Raspberry.jpg'
+import Carrots from '../images/Carrot.jpg'
+import GreenStrawberry from '../images/GreenStrawberry.jpg'
+import Raddish from '../images/Raddish.jpg'
+import Leek from '../images/Leek.jpg'
+import Turnip from '../images/Turnip.jpg'
+import Jalapeno from '../images/GarlicInfrontOfJalapeno.jpg'
+import GreenBerry from '../images/GreenBerry.jpg'
+
+
 const traditionalProduce = [
     {
         name: 'Cherry Tomatoes',
@@ -61,7 +74,7 @@ const traditionalProduce = [
         price: '$1/pound',
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/iFJggYhoExo8dm476',
-        imageref: Carrot,
+        imageref: Carrots,
     },
     {
         name: 'Green Strawberry ',
@@ -89,6 +102,24 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/ZNoGCg9LCQSHpYh68',
         imageref: Leek,
+    },
+    {
+        name: 'Turnip',
+        category: 'traditionalproduce',
+        amount: '1 pound',
+        price: '$1/pound',
+        description: 'Seed from Mayan origin',
+        imageurl: 'https://photos.app.goo.gl/ZNoGCg9LCQSHpYh68',
+        imageref: Turnip,
+    },
+    {
+        name: 'GreenBerry',
+        category: 'traditionalproduce',
+        amount: '1 pound',
+        price: '$1/pound',
+        description: 'Seed from Mayan origin',
+        imageurl: 'https://photos.app.goo.gl/ZNoGCg9LCQSHpYh68',
+        imageref: GreenBerry,
     }
 ]
 export default traditionalProduce

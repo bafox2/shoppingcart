@@ -1,3 +1,9 @@
+import BlueberryFlower from '../images/BlueberryFlower.jpg'
+import Dianthus from '../images/Dianthus.jpg'
+import YellowZiannias from '../images/YellowZinnias.jpg'
+import OrangeZinnias from '../images/OrangeZinnias.jpg'
+
+
 const flowers = [
     {
         name: 'Blueberry Flower',
@@ -6,7 +12,7 @@ const flowers = [
         price: '$1/pound',
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/wr9vkUs4cwH9uJhh8',
-        imageref: '',
+        imageref: BlueberryFlower
     },
     {
         name: 'Dianthus',
@@ -15,7 +21,7 @@ const flowers = [
         price: '$1/pound',
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/N1fFZ8gGta95u8mE7',
-        imageref: '',
+        imageref: Dianthus,
     },
     {
         name: 'Yellow Zinnias',
@@ -24,7 +30,7 @@ const flowers = [
         price: '$1/pound',
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/Y31EYYisJxpzeWUU7',
-        imageref: '',
+        imageref: YellowZiannias,
     },
     {
         name: 'Orange Zinnias',
@@ -32,7 +38,7 @@ const flowers = [
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
-        imageurl: 'https://photos.app.goo.gl/2Yn9EVxynevRNkGE8',
+        imageref: OrangeZinnias,
     }
 ]
 export default flowers
