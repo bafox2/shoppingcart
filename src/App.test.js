@@ -29,8 +29,9 @@ test('renders header across all pages', () => {
 
 test('correct number of items render', () => {
   const listlength = allItems.length
+  console.log(listlength)
   //use the mock thing like from above
-  render(<Shop></Shop>);
+  render(<MemoryRouter><Shop></Shop></MemoryRouter>);
   const items = screen.getAllByRole('listitem');
   expect(items).toHaveLength(listlength)
 });
