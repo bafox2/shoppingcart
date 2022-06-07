@@ -1,0 +1,21 @@
+header {
+
+}
+
+nav {
+
+}
+
+.navitem {
+
+}
+
+.logo {
+    width: 48px;
+    color: var(--primary);
+}
+
+.shoppingcart {
+    width: 48px;
+    color: var(--secondary);
+}

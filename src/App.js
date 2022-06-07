@@ -6,6 +6,8 @@ import Contact from './pages/Contact';
 import Shop from './pages/Shop';
 import Item from './components/Item';
 import Product from './components/Product';
+import Sidecart from './components/Sidecart'
+import Learn from './pages/Learn'
 import { ReactDOM } from 'react-dom/client';
 import { BrowserRouter, Switch, Routes, Route, Router } from 'react-router-dom'
 function App() {
@@ -16,6 +18,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/learn" element={<Learn />} />
+        <Route path="/cart" element={<Sidecart />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/shop/:name" element={<Product />} />
       </Routes>

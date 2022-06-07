@@ -14,9 +14,9 @@
 :root {
   --primary: #2C6E49;
   --secondary: #4C956C;
-  --shopPrimary: #FEFEE3;
+  --shopPrimary: #D68C45;
   --shopSecondary: #FFC9B9;
-  --productImage: #D68C45;
+  --light: #FEFEE3;
 }
 
 * {

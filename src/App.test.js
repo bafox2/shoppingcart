@@ -23,13 +23,12 @@ test('renders header across all pages', () => {
   render(<MemoryRouter>
     <App />
   </MemoryRouter >);
-  const linkElement = screen.getByText(/header/i);
+  const linkElement = screen.getByText(/Nate's farm/i);
   expect(linkElement).toBeInTheDocument();
 });
 
 test('correct number of items render', () => {
   const listlength = allItems.length
-  console.log(listlength)
   //use the mock thing like from above
   render(<MemoryRouter><Shop></Shop></MemoryRouter>);
   const items = screen.getAllByRole('listitem');

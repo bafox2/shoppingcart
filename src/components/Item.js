@@ -14,7 +14,7 @@ const Item = (props) => {
             <p>{props.description}</p>
             <p>{props.amount} for</p>
             <p>{props.price}</p>
-            <img alt='item' src={props.picture} />
+            <img className={styles.itemPic} alt='item' src={props.picture} />
         </div>
     );
 };

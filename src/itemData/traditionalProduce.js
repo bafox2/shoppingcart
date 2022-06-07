@@ -21,6 +21,7 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/R8Q9WymSF8RvEJRW9',
         imageref: Habnero,
+        id: '13'
     },
     {
         name: 'Cherry Tomatoes',
@@ -30,6 +31,7 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/1BLDCQV6bJBQWPeu9',
         imageref: CherryTomato,
+        id: '14'
     },
     {
         name: 'Jalapeno',
@@ -39,6 +41,7 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/NBZwAowYUwCXurw8A',
         imageref: Jalapeno,
+        id: '15'
     },
     {
         name: 'Cool Mushroom',
@@ -48,6 +51,7 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/X8LWTErogLZRrWA76',
         imageref: CoolMushroom,
+        id: '16'
     },
     {
         name: 'Peas',
@@ -57,6 +61,7 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/tppKWAK1fvtcwMEm8',
         imageref: Peas,
+        id: '17'
     },
     {
         name: 'Raspberry',
@@ -66,6 +71,7 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/HpsWgirtoHcT3YMc9',
         imageref: Raspberry,
+        id: '18'
     },
     {
         name: 'Carrots',
@@ -75,6 +81,7 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/iFJggYhoExo8dm476',
         imageref: Carrots,
+        id: '19'
     },
     {
         name: 'Green Strawberry ',
@@ -84,6 +91,7 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/tD5MEGdtXugaF9XU9',
         imageref: GreenStrawberry,
+        id: '20'
     },
     {
         name: 'Radish',
@@ -93,6 +101,7 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/hdTVYZoYfAXegnXw9',
         imageref: Raddish,
+        id: '21'
     },
     {
         name: 'Leek',
@@ -102,6 +111,7 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/ZNoGCg9LCQSHpYh68',
         imageref: Leek,
+        id: '22'
     },
     {
         name: 'Turnip',
@@ -111,6 +121,7 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/ZNoGCg9LCQSHpYh68',
         imageref: Turnip,
+        id: '23'
     },
     {
         name: 'GreenBerry',
@@ -120,6 +131,7 @@ const traditionalProduce = [
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/ZNoGCg9LCQSHpYh68',
         imageref: GreenBerry,
+        id: '24'
     }
 ]
 export default traditionalProduce
