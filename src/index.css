@@ -1,0 +1,36 @@
+/* libre-franklin-regular - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../src/fonts/libre-franklin-v12-latin/libre-franklin-v12-latin-regular.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../src/fonts/libre-franklin-v12-latin/libre-franklin-v12-latin-regular.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --primary: #2C6E49;
+  --secondary: #4C956C;
+  --shopPrimary: #FEFEE3;
+  --shopSecondary: #FFC9B9;
+  --productImage: #D68C45;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
