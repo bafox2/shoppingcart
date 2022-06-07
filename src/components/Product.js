@@ -6,18 +6,17 @@ import allItems from "../itemData/allItems";
 //might want to add a category for each individual categorty
 
 const Product = () => {
-    const { name, description, amount, price, imageref } = useParams()
+    const { name } = useParams()
     const foundItem = allItems.find(item => item.name = name)
 
     return (
         <div role='listitem'>
-            {/* {item} */}
             <p>{name}</p>
-            <Link to={`/shop/${name}`}>Bbuy</Link>
-            <p>{foundItem.description}</p>
-            <p>{foundItem.amount} for</p>
+            <Link to={`/shop/${name}`}>Buy</Link>
+            <p className={styles.description} >{foundItem.description}</p>
+            <p className={styles.productImage}>{foundItem.amount} for</p>
             <p>{foundItem.price}</p>
-            <img alt='item' src={foundItem.imageref} />
+            <img className={styles.itemPic} alt='item' src={foundItem.imageref} />
         </div>
     );
 };

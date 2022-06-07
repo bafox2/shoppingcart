@@ -7,7 +7,7 @@ import { mdiShoppingOutline, mdiSeedOutline } from '@mdi/js';
 const Header = (props) => {
     return (
         <header>
-            <p>Nate's farm</p>
+            <p className={styles.logoHeader} >Nate's farm</p>
             <Link to='/'><Icon path={mdiSeedOutline} className={styles.logo} /> </Link>
             <nav>
                 <Link to='about' className={styles.navItem}>About</Link>
