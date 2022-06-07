@@ -6,9 +6,6 @@ import { Link, use } from "react-router-dom";
 
 const Item = (props) => {
 
-    // console.log({ match })
-    // const item = match.params.name
-
     return (
         <div role='listitem'>
             {/* {item} */}
