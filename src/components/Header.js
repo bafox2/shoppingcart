@@ -8,7 +8,7 @@ const Header = (props) => {
 
     const cartNum = props.cartNum() ? props.cartNum() : 0
     return (
-        <header>
+        <header title="header">
             <p className={styles.logoHeader} >Nate's farm</p>
             <Link to='/'><Icon path={mdiSeedOutline} className={styles.logo} /> </Link>
             <nav>
@@ -17,7 +17,7 @@ const Header = (props) => {
                 <Link to='contact' className={styles.navItem}>Contact</Link>
                 <Link to='shop' className={styles.navItem}>Shop</Link>
                 <Link to='cart'><Icon path={mdiShoppingOutline} className={styles.shoppingcart} /></Link>
-                <span className={styles.cartQuantity}>{cartNum ? cartNum : 0}</span>
+                <span className={styles.cartQuantity} title='cartNum'>{cartNum ? cartNum : 0}</span>
             </nav>
 
         </header>

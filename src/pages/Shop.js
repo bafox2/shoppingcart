@@ -10,7 +10,7 @@ const Shop = (props) => {
 
     return (
         <div>
-            <h1>shop</h1>
+            <h1 title="shopHeader">shop</h1>
             {shoplist}
         </div>
     );

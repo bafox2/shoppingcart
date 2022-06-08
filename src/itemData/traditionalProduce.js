@@ -14,7 +14,7 @@ import GreenBerry from '../images/GreenBerry.jpg'
 
 const traditionalProduce = [
     {
-        name: 'Habnero',
+        name: 'Habanero',
         category: 'traditionalproduce',
         amount: '1 Oz',
         price: '$12.48',

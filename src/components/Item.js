@@ -9,7 +9,7 @@ const Item = (props) => {
     return (
         <div role='listitem'>
             {/* {item} */}
-            <Link to={`/shop/${props.name}`}>{props.name}</Link>
+            <Link to={`/shop/${props.name}`} title='itemLink'>{props.name}</Link>
             <p>add {props.name} to cart</p>
             <p>{props.description}</p>
             <p>{props.amount} for</p>

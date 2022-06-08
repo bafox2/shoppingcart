@@ -6,22 +6,24 @@ import Shop from './pages/Shop';
 import { MemoryRouter } from 'react-router-dom';
 import allItems from './itemData/allItems'
 import Item from './components/Item'
+import Product from './components/Product';
+import Header from './components/Header';
 
 //,ake sure to wrap the router in memoryrouter
 
 
 test('renders clicking link takes you to right spot', () => {
   render(<MemoryRouter>
-    <App />
+    <Header cartNum={() => true} />
   </MemoryRouter >);
-  const link = screen.getByRole("link", { name: "Shop" });
+  const link = screen.getByText("Shop");
   userEvent.click(link);
-  expect(screen.getByRole("heading").textContent).toMatch(/shop/i);
+  expect(screen.getByTitle("header")).toHaveTextContent(/Nate's farm/i);
 });
 
 test('renders header across all pages', () => {
   render(<MemoryRouter>
-    <App />
+    <Header cartNum={() => true} />
   </MemoryRouter >);
   const linkElement = screen.getByText(/Nate's farm/i);
   expect(linkElement).toBeInTheDocument();
@@ -33,6 +35,38 @@ test('correct number of items render', () => {
   render(<MemoryRouter><Shop></Shop></MemoryRouter>);
   const items = screen.getAllByRole('listitem');
   expect(items).toHaveLength(listlength)
+});
+
+test('clicking buy adds one to the cart', () => {
+  render(<MemoryRouter><App /></MemoryRouter>);
+  const shop = screen.getByText("Shop");
+  userEvent.click(shop);
+  const item = screen.getByText("Habanero");
+  userEvent.click(item);
+  const button = screen.getByText("buy this");
+  userEvent.click(button);
+  const cartNum = screen.getByTitle("cartNum");
+  expect(cartNum.textContent).toBe('1')
+});
+
+test('buying multiple things adds one to the cart each time', () => {
+  render(<MemoryRouter><App /></MemoryRouter>);
+  const shop = screen.getByText("Shop");
+  userEvent.click(shop);
+  const item = screen.getByText("Habanero");
+  userEvent.click(item);
+  const button = screen.getByText("buy this");
+  userEvent.click(button);
+  const cartNum = screen.getByTitle("cartNum");
+  expect(cartNum.textContent).toBe('1')
+  userEvent.click(shop);
+  expect(screen.getByTitle('shopHeader')).toHaveTextContent(/shop/);
+  const item2 = screen.getByText("Peas");
+  userEvent.click(item2);
+  const button2 = screen.getByText("buy this");
+  userEvent.click(button2);
+  userEvent.click(button);
+  expect(cartNum.textContent).toBe('2')
 });
 
 // test('item renders with correct header', () => {
