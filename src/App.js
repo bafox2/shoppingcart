@@ -33,7 +33,9 @@ function App() {
       setCartList([
         ...cartList, {
           name: allItems.find(product => product.name === item).name,
-          quantity: 1
+          price: allItems.find(product => product.name === item).price,
+          pic: allItems.find(product => product.name === item).imageref,
+          quantity: 1,
         }
       ])
   }
