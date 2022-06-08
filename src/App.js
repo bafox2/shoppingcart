@@ -13,7 +13,7 @@ import { ReactDOM } from 'react-dom/client';
 import { BrowserRouter, Switch, Routes, Route, Router } from 'react-router-dom'
 import React from 'react';
 function App() {
-
+  //going to attempt to make the individual components pass the object referenced in allitems
 
   const [cartList, setCartList] = React.useState([])
   function onItemBuy(item) {
@@ -21,7 +21,7 @@ function App() {
     const isInCart = checkDuplicate(item)
     isInCart ?
       setCartList(cartList.map(cartItem => {
-        if (cartItem.name === item) {
+        if (cartItem.name === item.name) {
           // Create a *new* object with changes
           return { ...cartItem, quantity: cartItem.quantity + 1 };
         } else {
@@ -32,16 +32,17 @@ function App() {
       :
       setCartList([
         ...cartList, {
-          name: allItems.find(product => product.name === item).name,
-          price: allItems.find(product => product.name === item).price,
-          pic: allItems.find(product => product.name === item).imageref,
+          name: item.name,
+          price: item.price,
+          pic: item.imageref,
+          id: item.id,
           quantity: 1,
         }
       ])
   }
 
   function checkDuplicate(item) {
-    return cartList.some(arrVal => item === arrVal.name);
+    return cartList.some(arrVal => item.name === arrVal.name);
   }
 
 
@@ -59,7 +60,7 @@ function App() {
         <Route path="/learn" element={<Learn />} />
         <Route path="/cart" element={<Sidecart cart={cartList} />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/shop/:name" element={<Product onSubmit={onItemBuy} />} />
+        <Route path="/shop/:id" element={<Product onSubmit={onItemBuy} />} />
       </Routes>
     </div>
   );

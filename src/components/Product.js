@@ -6,13 +6,15 @@ import allItems from "../itemData/allItems";
 //might want to add a category for each individual categorty
 
 const Product = (props) => {
-    const { name } = useParams()
-    const foundItem = allItems.find(item => item.name = name)
+
+    const { id } = useParams()
+    const foundItem = allItems.find(item => item.id === id)
+    console.log(foundItem)
 
     return (
         <div role='listitem'>
-            <p>{name}</p>
-            <button onClick={() => props.onSubmit(name)}>buy this</button>
+            <p>{'product comp'}</p>
+            <button onClick={() => props.onSubmit(foundItem)}>buy this</button>
             <p className={styles.description} >{foundItem.description}</p>
             <p className={styles.productImage}>{foundItem.amount} for</p>
             <p>{foundItem.price}</p>

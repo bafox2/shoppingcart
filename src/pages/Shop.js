@@ -5,8 +5,8 @@ import items from "../itemData/allItems.js";
 import { Link } from "react-router-dom";
 
 const Shop = (props) => {
-
-    const shoplist = items.map(item => <Item name={item.name} picture={item.imageref} price={item.price} amount={item.amount} category={item.category} key={item.id} role='item' />)
+    console.log(props)
+    const shoplist = items.map(item => <Item name={item.name} picture={item.imageref} price={item.price} amount={item.amount} category={item.category} key={item.name} id={item.id} role='item' />)
 
     return (
         <div>
