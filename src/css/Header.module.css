@@ -24,3 +24,11 @@ nav {
     width: 48px;
     color: var(--secondary);
 }
+
+.cartQuantity{
+    position: relative;
+    top: 0px;
+    right: 20px;
+    font-weight:900;
+    background-color: var(--shopSecondary);
+}
