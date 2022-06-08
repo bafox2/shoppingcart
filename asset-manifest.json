@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7a0607bc.css",
-    "main.js": "/static/js/main.e92f8895.js",
+    "main.js": "/static/js/main.44307a3d.js",
     "static/media/Nasturtium.jpg": "/static/media/Nasturtium.3e75824075d5f5274223.jpg",
     "static/media/Basil.jpg": "/static/media/Basil.d2428ed18c341346bca0.jpg",
     "static/media/BullsBlood.jpg": "/static/media/BullsBlood.a8b5ec070a754a0400ba.jpg",
@@ -31,10 +31,10 @@
     "static/media/libre-franklin-v12-latin-regular.woff2": "/static/media/libre-franklin-v12-latin-regular.8d01d395f6529b866faa.woff2",
     "index.html": "/index.html",
     "main.7a0607bc.css.map": "/static/css/main.7a0607bc.css.map",
-    "main.e92f8895.js.map": "/static/js/main.e92f8895.js.map"
+    "main.44307a3d.js.map": "/static/js/main.44307a3d.js.map"
   },
   "entrypoints": [
     "static/css/main.7a0607bc.css",
-    "static/js/main.e92f8895.js"
+    "static/js/main.44307a3d.js"
   ]
 }
