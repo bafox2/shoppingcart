@@ -16,34 +16,29 @@ function App() {
 
   const [cartList, setCartList] = React.useState([])
   function onItemBuy(item) {
-    //might need to check if there is already a thing in the cart with the name and increment it
-    // if (cartList.find(product => product.name === item).name === undefined) {
-    //problem is that this is executing for every item purchase, but we only want it when there is already something in cart
-    //causes an error on the next line
+    // this creates a new object still
     const isInCart = checkDuplicate(item)
-    console.log(isInCart)
-    setCartList([
-      ...cartList, {
-        name: allItems.find(product => product.name === item).name,
-        quantity: 1
-      }
-    ])
+    isInCart ?
+      setCartList([
+        {
+          name: cartList.find(product => product.name === item).name,
+          quantity: cartList.find(product => product.name === item).quantity + 1
+        },
+        ...cartList
+      ])
+      :
+      setCartList([
+        ...cartList, {
+          name: allItems.find(product => product.name === item).name,
+          quantity: 1
+        }
+      ])
   }
 
   function checkDuplicate(item) {
     return cartList.some(arrVal => item === arrVal.name);
   }
 
-  function checkCart(item) {
-    if (cartList.some(element => element.name = item)) {
-      return false
-    } else if (cartList.some(element => element.name = item)) {
-      return true
-    }
-    else {
-      return false
-    }
-  }
 
   function calculateHeaderCartItems() {
     return cartList ? cartList.length : 0
