@@ -18,9 +18,11 @@ function App() {
   function onItemBuy(item) {
     //might need to check if there is already a thing in the cart with the name and increment it
     setCartList([
-      ...cartList,
-      allItems.find(product => product.name === item).name]
-    )
+      ...cartList, {
+        name: allItems.find(product => product.name === item).name,
+        quantity: 1
+      }
+    ])
   }
 
   function calculateHeaderCartItems() {
