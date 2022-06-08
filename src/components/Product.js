@@ -6,7 +6,6 @@ import allItems from "../itemData/allItems";
 //might want to add a category for each individual categorty
 
 const Product = (props) => {
-    console.log(props)
     const { name } = useParams()
     const foundItem = allItems.find(item => item.name = name)
 
