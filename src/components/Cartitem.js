@@ -11,7 +11,7 @@ const Cartitem = (props) => {
             {/* {item} */}
             <Link to={`/shop/${props.name}`} title='itemLink'>{props.name}</Link>
             <p>add {props.name} to cart</p>
-            <p>{props.description}</p>
+            <p>{props.quantity}</p>
             <p>{props.amount} for</p>
             <p>{props.price}</p>
             <img className={styles.itemPic} alt='item' src={props.picture} />

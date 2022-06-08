@@ -14,18 +14,21 @@ import { BrowserRouter, Switch, Routes, Route, Router } from 'react-router-dom'
 import React from 'react';
 function App() {
 
+
   const [cartList, setCartList] = React.useState([])
   function onItemBuy(item) {
     // this creates a new object still
     const isInCart = checkDuplicate(item)
     isInCart ?
-      setCartList([
-        {
-          name: cartList.find(product => product.name === item).name,
-          quantity: cartList.find(product => product.name === item).quantity + 1
-        },
-        ...cartList
-      ])
+      setCartList(cartList.map(cartItem => {
+        if (cartItem.name === item) {
+          // Create a *new* object with changes
+          return { ...cartItem, quantity: cartItem.quantity + 1 };
+        } else {
+          // No changes
+          return cartItem;
+        }
+      }))
       :
       setCartList([
         ...cartList, {
