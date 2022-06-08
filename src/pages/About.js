@@ -6,7 +6,7 @@ const About = (props) => {
     return (
         <div>
             <main>
-                <h1>Welcome to ABou</h1>
+                <h1>Welcome to About</h1>
                 <p>This farm was started :</p>
                 <p>This farm uses the techniques :</p>
                 <p>In the future we hope to become :</p>
