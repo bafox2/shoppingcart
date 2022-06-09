@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 //might want to add a category for each individual categorty
 
 const Cartitem = (props) => {
-    console.log(props)
     return (
         <div role='listitem'>
             <Link to={`/shop/${props.item.id}`} title='itemLink'>{props.name}</Link>

@@ -9,7 +9,6 @@ const Product = (props) => {
 
     const { id } = useParams()
     const foundItem = allItems.find(item => item.id === id)
-    console.log(foundItem)
 
     return (
         <div role='listitem'>

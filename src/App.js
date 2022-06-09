@@ -16,7 +16,6 @@ function App() {
   function onItemBuy(selectedProduct) {
     // this creates a new object still
     const isInCart = checkDuplicate(selectedProduct)
-    console.log(isInCart)
     isInCart ?
       setCartList(cartList.map(currentCartEntry => {
         if (currentCartEntry.item.name === selectedProduct.name) {
@@ -46,7 +45,6 @@ function App() {
       if (cartItem.item.name === selectedCartItem.name) {
         // Create a *new* object with changes
         if (crement) {
-          console.log('in crement')
           return { ...cartItem, quantity: cartItem.quantity + 1 }
         } else {
           return { ...cartItem, quantity: cartItem.quantity - 1 }
