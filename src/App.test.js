@@ -5,8 +5,6 @@ import App from './App';
 import Shop from './pages/Shop';
 import { MemoryRouter } from 'react-router-dom';
 import allItems from './itemData/allItems'
-import Item from './components/Item'
-import Product from './components/Product';
 import Header from './components/Header';
 
 //,ake sure to wrap the router in memoryrouter

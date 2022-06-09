@@ -9,7 +9,9 @@ const Cartitem = (props) => {
     return (
         <div role='listitem'>
             <Link to={`/shop/${props.id}`} title='itemLink'>{props.name}</Link>
-            <p>{props.quantity}</p>
+            <div><button onClick={() => props.onCrement()}>+</button>
+                <p>{props.quantity}</p>
+                <button>-</button></div>
             <p>{props.price}</p>
             <img className={styles.itemPic} alt='picref' src={props.pic} />
         </div>
