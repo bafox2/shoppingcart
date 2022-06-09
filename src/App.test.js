@@ -65,7 +65,29 @@ test('buying multiple things adds one to the cart each time', () => {
   userEvent.click(item2);
   const button2 = screen.getByText("buy this");
   userEvent.click(button2);
+  expect(cartNum.textContent).toBe('2')
+});
+
+test('buying multiples still only increments cart once', () => {
+  render(<MemoryRouter><App /></MemoryRouter>);
+  const shop = screen.getByText("Shop");
+  userEvent.click(shop);
+  const item = screen.getByText("Habanero");
+  userEvent.click(item);
+  const button = screen.getByText("buy this");
   userEvent.click(button);
+  userEvent.click(button);
+  userEvent.click(button);
+  const cartNum = screen.getByTitle("cartNum");
+  expect(cartNum.textContent).toBe('1')
+  userEvent.click(shop);
+  expect(screen.getByTitle('shopHeader')).toHaveTextContent(/shop/);
+  const item2 = screen.getByText("Peas");
+  userEvent.click(item2);
+  const button2 = screen.getByText("buy this");
+  userEvent.click(button2);
+  userEvent.click(button2);
+  userEvent.click(button2);
   expect(cartNum.textContent).toBe('2')
 });
 

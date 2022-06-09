@@ -45,6 +45,21 @@ function App() {
     return cartList.some(arrVal => item.name === arrVal.name);
   }
 
+  function handleIncrement(cartitem, crement) {
+    setCartList(cartList.map(item => {
+      if (item.name === cartitem.name) {
+        // Create a *new* object with changes
+        if (crement) {
+          return { ...item, quantity: item.quantity + 1 }
+        } else {
+          return { ...item, quantity: item.quantity + 1 }
+        }
+      } else {
+        return item
+      }
+    }))
+  }
+
 
   function calculateHeaderCartItems() {
     return cartList ? cartList.length : 0
@@ -58,7 +73,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/learn" element={<Learn />} />
-        <Route path="/cart" element={<Sidecart cart={cartList} />} />
+        <Route path="/cart" element={<Sidecart cart={cartList} onCrement={handleIncrement} />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/shop/:id" element={<Product onSubmit={onItemBuy} />} />
       </Routes>
