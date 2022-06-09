@@ -1,8 +1,7 @@
 import React from "react";
-import styles from "../css/Shop.module.css";
+// import styles from "../css/Shop.module.css";
 import Item from "../components/Item"
 import items from "../itemData/allItems.js";
-import { Link } from "react-router-dom";
 
 const Shop = (props) => {
     console.log(props)

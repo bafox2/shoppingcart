@@ -4,13 +4,10 @@ import Header from './components/Header';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Shop from './pages/Shop';
-import Item from './components/Item';
-import allItems from './itemData/allItems';
 import Product from './components/Product';
 import Sidecart from './components/Sidecart'
 import Learn from './pages/Learn'
-import { ReactDOM } from 'react-dom/client';
-import { BrowserRouter, Switch, Routes, Route, Router } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import React from 'react';
 function App() {
   //going to attempt to make the individual components pass the object referenced in allitems

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "../css/Item.module.css";
-import { Link, use } from "react-router-dom";
+import { Link, } from "react-router-dom";
 
 //might want to add a category for each individual categorty
 
