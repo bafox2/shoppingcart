@@ -4,12 +4,12 @@ import Cartitem from "./Cartitem";
 // state of cart stuff might be handled in the APP itself
 
 const Sidecart = (props) => {
-    const cartItems = props.cart.map(item => <Cartitem
-        name={item.name}
-        quantity={item.quantity}
-        price={item.price}
-        id={item.id}
-        pic={item.pic}
+    const cartItems = props.cart.map(cartItem => <Cartitem
+        name={cartItem.item.name}
+        quantity={cartItem.quantity}
+        price={cartItem.item.price}
+        id={cartItem.item.id}
+        pic={cartItem.item.pic}
         onCrement={props.onCrement}
     />)
     return (

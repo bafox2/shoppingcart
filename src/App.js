@@ -13,33 +13,31 @@ function App() {
   //going to attempt to make the individual components pass the object referenced in allitems
 
   const [cartList, setCartList] = React.useState([])
-  function onItemBuy(item) {
+  function onItemBuy(selectedProduct) {
     // this creates a new object still
-    const isInCart = checkDuplicate(item)
+    const isInCart = checkDuplicate(selectedProduct)
+    console.log(isInCart)
     isInCart ?
-      setCartList(cartList.map(cartItem => {
-        if (cartItem.name === item.name) {
+      setCartList(cartList.map(currentCartEntry => {
+        if (currentCartEntry.item.name === selectedProduct.name) {
           // Create a *new* object with changes
-          return { ...cartItem, quantity: cartItem.quantity + 1 };
+          return { ...currentCartEntry, quantity: currentCartEntry.quantity + 1 };
         } else {
           // No changes
-          return cartItem;
+          return currentCartEntry;
         }
       }))
       :
       setCartList([
         ...cartList, {
-          name: item.name,
-          price: item.price,
-          pic: item.imageref,
-          id: item.id,
+          item: selectedProduct,
           quantity: 1,
         }
       ])
   }
 
-  function checkDuplicate(item) {
-    return cartList.some(arrVal => item.name === arrVal.name);
+  function checkDuplicate(prospectiveCartEntry) {
+    return cartList.some(arrVal => prospectiveCartEntry.name === arrVal.item.name);
   }
 
   function handleIncrement(cartitem, crement) {
@@ -49,7 +47,7 @@ function App() {
         if (crement) {
           return { ...item, quantity: item.quantity + 1 }
         } else {
-          return { ...item, quantity: item.quantity + 1 }
+          return { ...item, quantity: item.quantity - 1 }
         }
       } else {
         return item
