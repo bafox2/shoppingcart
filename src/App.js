@@ -40,17 +40,19 @@ function App() {
     return cartList.some(arrVal => prospectiveCartEntry.name === arrVal.item.name);
   }
 
-  function handleIncrement(cartitem, crement) {
-    setCartList(cartList.map(item => {
-      if (item.name === cartitem.name) {
+  function handleIncrement(selectedCartItem, crement) {
+    console.log(crement, selectedCartItem)
+    setCartList(cartList.map(cartItem => {
+      if (cartItem.item.name === selectedCartItem.name) {
         // Create a *new* object with changes
         if (crement) {
-          return { ...item, quantity: item.quantity + 1 }
+          console.log('in crement')
+          return { ...cartItem, quantity: cartItem.quantity + 1 }
         } else {
-          return { ...item, quantity: item.quantity - 1 }
+          return { ...cartItem, quantity: cartItem.quantity - 1 }
         }
       } else {
-        return item
+        return cartItem
       }
     }))
   }

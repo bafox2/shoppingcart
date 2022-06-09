@@ -5,11 +5,8 @@ import Cartitem from "./Cartitem";
 
 const Sidecart = (props) => {
     const cartItems = props.cart.map(cartItem => <Cartitem
-        name={cartItem.item.name}
+        item={cartItem.item}
         quantity={cartItem.quantity}
-        price={cartItem.item.price}
-        id={cartItem.item.id}
-        pic={cartItem.item.pic}
         onCrement={props.onCrement}
     />)
     return (

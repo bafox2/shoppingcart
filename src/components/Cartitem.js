@@ -8,10 +8,10 @@ const Cartitem = (props) => {
     console.log(props)
     return (
         <div role='listitem'>
-            <Link to={`/shop/${props.id}`} title='itemLink'>{props.name}</Link>
-            <div><button onClick={() => props.onCrement()}>+</button>
+            <Link to={`/shop/${props.item.id}`} title='itemLink'>{props.name}</Link>
+            <div><button onClick={() => props.onCrement(props.item, true)}>+</button>
                 <p>{props.quantity}</p>
-                <button>-</button></div>
+                <button onClick={() => props.onCrement(props.item, false)}>-</button></div>
             <p>{props.price}</p>
             <img className={styles.itemPic} alt='picref' src={props.pic} />
         </div>
