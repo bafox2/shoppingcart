@@ -8,6 +8,7 @@ const Sidecart = (props) => {
         item={cartItem.item}
         quantity={cartItem.quantity}
         onCrement={props.onCrement}
+        onRemove={props.onRemove}
     />)
     return (
         <div >

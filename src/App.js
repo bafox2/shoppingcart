@@ -11,7 +11,13 @@ import { Routes, Route } from 'react-router-dom'
 import React from 'react';
 function App() {
   //going to attempt to make the individual components pass the object referenced in allitems
-
+  const [filterList, setFilterList] = React.useState({
+    produce: true,
+    flowers: true,
+    microgreens: true,
+    sort: 'priceHigh',
+    search: 'gjasdfklghsdkl;fjghlk'
+  })
   const [cartList, setCartList] = React.useState([])
   function onItemBuy(selectedProduct) {
     // this creates a new object still
@@ -46,8 +52,10 @@ function App() {
         // Create a *new* object with changes
         if (crement) {
           return { ...cartItem, quantity: cartItem.quantity + 1 }
-        } else {
+        } else if (cartItem.quantity >= 1) {
           return { ...cartItem, quantity: cartItem.quantity - 1 }
+        } else {
+          return cartItem
         }
       } else {
         return cartItem
@@ -55,9 +63,23 @@ function App() {
     }))
   }
 
+  function handleRemove(selectedCartItem) {
+    setCartList(cartList.filter(currentCartEntry => currentCartEntry.item !== selectedCartItem))
+  }
 
   function calculateHeaderCartItems() {
     return cartList ? cartList.length : 0
+  }
+
+  const handleFilterChange = (event) => {
+    console.log(event)
+    const { name, value, type, checked } = event.target
+    setFilterList((prevOptions) => {
+      return {
+        ...prevOptions,
+        [name]: type === 'checkbox' ? checked : value,
+      }
+    })
   }
 
   return (
@@ -68,8 +90,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/learn" element={<Learn />} />
-        <Route path="/cart" element={<Sidecart cart={cartList} onCrement={handleIncrement} />} />
-        <Route path="/shop" element={<Shop />} />
+        <Route path="/cart" element={<Sidecart cart={cartList} onCrement={handleIncrement} onRemove={handleRemove} />} />
+        <Route path="/shop" element={<Shop state={filterList} handleChange={handleFilterChange} />} />
         <Route path="/shop/:id" element={<Product onSubmit={onItemBuy} />} />
       </Routes>
     </div>
