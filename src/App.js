@@ -16,7 +16,7 @@ function App() {
     flowers: true,
     microgreens: true,
     sort: 'priceHigh',
-    search: 'gjasdfklghsdkl;fjghlk'
+    search: ''
   })
   const [cartList, setCartList] = React.useState([])
   function onItemBuy(selectedProduct) {
@@ -91,7 +91,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/learn" element={<Learn />} />
         <Route path="/cart" element={<Sidecart cart={cartList} onCrement={handleIncrement} onRemove={handleRemove} />} />
-        <Route path="/shop" element={<Shop state={filterList} handleChange={handleFilterChange} />} />
+        <Route path="/shop" element={<Shop filters={filterList} handleChange={handleFilterChange} />} />
         <Route path="/shop/:id" element={<Product onSubmit={onItemBuy} />} />
       </Routes>
     </div>

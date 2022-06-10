@@ -16,7 +16,8 @@ const Sidebar = (props) => {
                 name='search'
                 value={props.state.search}
             />
-            {/* <select
+            <label>sort by </label>
+            <select
                 id='inputOptions'
                 placeholder='placeholder'
                 onChange={props.handleChange}
@@ -25,40 +26,35 @@ const Sidebar = (props) => {
             >
                 <option value='priceHigh'>High to low</option>
                 <option value='priceLow'>Low to high</option>
-            </select> */}
-            <ul>
-                <li>
-                    <label>produce</label>
-                    <input
-                        type='checkbox'
-                        placeholder=''
-                        onChange={props.handleChange}
-                        name='produce'
-                        value={props.state.produce}
-                    />
-                </li>
-                <li>
-                    <label>flowers</label>
-                    <input
-                        type='checkbox'
-                        placeholder=''
-                        onChange={props.handleChange}
-                        name='flowers'
-                        value={props.state.flowers}
-                    />
-                </li>
-                <li>
-                    <label>microgreens</label>
-                    <input
-                        type='checkbox'
-                        placeholder=''
-                        onChange={props.handleChange}
-                        name='microgreens'
-                        value={props.state.microgreens}
-                    />
-                </li>
+            </select>
 
-            </ul>
+            <label>produce</label>
+            <input
+                type='checkbox'
+                placeholder=''
+                onChange={props.handleChange}
+                name='produce'
+                value={props.state.produce}
+            />
+
+            <label>flowers</label>
+            <input
+                type='checkbox'
+                placeholder=''
+                onChange={props.handleChange}
+                name='flowers'
+                value={props.state.flowers}
+            />
+
+            <label>microgreens</label>
+            <input
+                type='checkbox'
+                placeholder=''
+                onChange={props.handleChange}
+                name='microgreens'
+                value={props.state.microgreens}
+            />
+
         </div>
     );
 };

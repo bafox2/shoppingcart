@@ -11,7 +11,7 @@ const Shop = (props) => {
     return (
         <div>
             <h1 title="shopHeader">shop</h1>
-            <Sidebar onChange={props.handleChange} state={props.state}></Sidebar>
+            <Sidebar handleChange={props.handleChange} state={props.filters}></Sidebar>
             {shoplist}
         </div>
     );
