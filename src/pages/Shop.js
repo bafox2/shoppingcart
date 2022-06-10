@@ -6,6 +6,8 @@ import items from "../itemData/allItems.js";
 
 const Shop = (props) => {
     console.log(props)
+
+    const filteredList = items.filter(item => item)
     const shoplist = items.map(item => <Item name={item.name} picture={item.imageref} price={item.price} amount={item.amount} category={item.category} key={item.name} id={item.id} role='item' />)
 
     return (
