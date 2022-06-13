@@ -12,7 +12,7 @@ import Hyssop from '../images/Hyssop.jpg'
 const microgreens = [
     {
         name: 'Wheatgrass',
-        category: 'traditionalproduce',
+        category: 'microgreens',
         amount: '1 Oz',
         price: '$1.09',
         cartprice: '1.09',
@@ -23,7 +23,7 @@ const microgreens = [
     },
     {
         name: "Bull's Blood",
-        category: 'traditionalproduce',
+        category: 'microgreens',
         amount: '1 Oz',
         price: '$6.71',
         cartprice: '6.71',
@@ -34,7 +34,7 @@ const microgreens = [
     },
     {
         name: "Basil",
-        category: 'traditionalproduce',
+        category: 'microgreens',
         amount: '1 Oz',
         price: '$2.03',
         cartprice: '2.03',
@@ -45,7 +45,7 @@ const microgreens = [
     },
     {
         name: "Nasturtium",
-        category: 'traditionalproduce',
+        category: 'microgreens',
         amount: '1 Oz',
         price: '$4.94',
         cartprice: '4.94',
@@ -56,7 +56,7 @@ const microgreens = [
     },
     {
         name: "African Blue Basil",
-        category: 'traditionalproduce',
+        category: 'microgreens',
         amount: '1 Oz',
         price: '$7.26',
         cartprice: '7.26',
@@ -67,7 +67,7 @@ const microgreens = [
     },
     {
         name: "Dill",
-        category: 'traditionalproduce',
+        category: 'microgreens',
         amount: '1 Oz',
         price: '$2.11',
         cartprice: '.71',
@@ -78,7 +78,7 @@ const microgreens = [
     },
     {
         name: "Lemon Thyme",
-        category: 'traditionalproduce',
+        category: 'microgreens',
         amount: '1 Oz',
         price: '$3.30',
         cartprice: '6.71',
@@ -89,7 +89,7 @@ const microgreens = [
     },
     {
         name: "Honeydew Sage",
-        category: 'traditionalproduce',
+        category: 'microgreens',
         amount: '1 Oz',
         price: '$1.57',
         cartprice: '6.71',
@@ -100,7 +100,7 @@ const microgreens = [
     },
     {
         name: "Hyssop",
-        category: 'traditionalproduce',
+        category: 'microgreens',
         amount: '1 Oz',
         price: '$4.98',
         cartprice: '6.71',

@@ -7,7 +7,7 @@ import OrangeZinnias from '../images/OrangeZinnias.jpg'
 const flowers = [
     {
         name: 'Blueberry Flower',
-        category: 'traditionalproduce',
+        category: 'flowers',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
@@ -17,7 +17,7 @@ const flowers = [
     },
     {
         name: 'Dianthus',
-        category: 'traditionalproduce',
+        category: 'flowers',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
@@ -27,7 +27,7 @@ const flowers = [
     },
     {
         name: 'Yellow Zinnias',
-        category: 'traditionalproduce',
+        category: 'flowers',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
@@ -37,7 +37,7 @@ const flowers = [
     },
     {
         name: 'Orange Zinnias',
-        category: 'traditionalproduce',
+        category: 'flowers',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',

@@ -15,7 +15,7 @@ import GreenBerry from '../images/GreenBerry.jpg'
 const traditionalProduce = [
     {
         name: 'Habanero',
-        category: 'traditionalproduce',
+        category: 'produce',
         amount: '1 Oz',
         price: '$12.48',
         description: 'Seed from Mayan origin',
@@ -25,7 +25,7 @@ const traditionalProduce = [
     },
     {
         name: 'Cherry Tomatoes',
-        category: 'traditionalproduce',
+        category: 'produce',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
@@ -35,7 +35,7 @@ const traditionalProduce = [
     },
     {
         name: 'Jalapeno',
-        category: 'traditionalproduce',
+        category: 'produce',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
@@ -45,7 +45,7 @@ const traditionalProduce = [
     },
     {
         name: 'Cool Mushroom',
-        category: 'traditionalproduce',
+        category: 'produce',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
@@ -55,7 +55,7 @@ const traditionalProduce = [
     },
     {
         name: 'Peas',
-        category: 'traditionalproduce',
+        category: 'produce',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
@@ -65,7 +65,7 @@ const traditionalProduce = [
     },
     {
         name: 'Raspberry',
-        category: 'traditionalproduce',
+        category: 'produce',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
@@ -75,7 +75,7 @@ const traditionalProduce = [
     },
     {
         name: 'Carrots',
-        category: 'traditionalproduce',
+        category: 'produce',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
@@ -85,7 +85,7 @@ const traditionalProduce = [
     },
     {
         name: 'Green Strawberry ',
-        category: 'traditionalproduce',
+        category: 'produce',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
@@ -95,7 +95,7 @@ const traditionalProduce = [
     },
     {
         name: 'Radish',
-        category: 'traditionalproduce',
+        category: 'produce',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
@@ -105,7 +105,7 @@ const traditionalProduce = [
     },
     {
         name: 'Leek',
-        category: 'traditionalproduce',
+        category: 'produce',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
@@ -115,7 +115,7 @@ const traditionalProduce = [
     },
     {
         name: 'Turnip',
-        category: 'traditionalproduce',
+        category: 'produce',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',
@@ -125,7 +125,7 @@ const traditionalProduce = [
     },
     {
         name: 'GreenBerry',
-        category: 'traditionalproduce',
+        category: 'produce',
         amount: '1 pound',
         price: '$1/pound',
         description: 'Seed from Mayan origin',

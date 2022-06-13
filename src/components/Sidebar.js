@@ -4,7 +4,6 @@ import styles from "../css/Header.module.css";
 // might want to make the inputs generate programatically
 
 const Sidebar = (props) => {
-    console.log(props)
     return (
         <div>
             <p>{props.state.microgreens}</p>

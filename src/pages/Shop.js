@@ -5,20 +5,43 @@ import Sidebar from "../components/Sidebar";
 import items from "../itemData/allItems.js";
 
 const Shop = (props) => {
-    console.log(props)
-    const shoplist = items.map(item => <Item name={item.name} picture={item.imageref} price={item.price} amount={item.amount} category={item.category} key={item.name} id={item.id} role='item' />)
     // won't work because the original list has to stay available
     const [list, setList] = useState([]);
     const [filterList, setFilterList] = React.useState({
-        produce: true,
-        flowers: true,
-        microgreens: true,
+        produce: '',
+        flowers: '',
+        microgreens: '',
         sort: 'priceHigh',
         search: ''
     })
 
+    const shoplist = displayResults(filterList, items).map(item => <Item name={item.name} picture={item.imageref} price={item.price} amount={item.amount} category={item.category} key={item.name} id={item.id} role='item' />)
+
+    //might want better error handling with all boxes/noboxes checked
+    function displayFilter(filterConds, itemArr) {
+        const nextList = []
+        for (const filterVar in filterConds) {
+            if (filterList[filterVar] === true) {
+                nextList.push(...Array.from(itemArr.filter(item => item.category === filterVar)))
+            }
+        }
+        return nextList.length > 0 ? nextList : itemArr
+    }
+
+    function displaySearch(filterList, itemArr) {
+        const nextList = []
+        nextList.push(...itemArr.filter(item => item.name.toLowerCase().includes(filterList.search)))
+        return (nextList)
+    }
+
+    //is only working when there are filtered selections
+    function displayResults(filterList) {
+        const searchResults = displaySearch(filterList, items)
+        const filteredSearchResults = displayFilter(filterList, searchResults)
+        return filteredSearchResults
+    }
+
     const handleFilterChange = (event) => {
-        console.log(event)
         const { name, value, type, checked } = event.target
         setFilterList((prevOptions) => {
             return {
@@ -27,10 +50,6 @@ const Shop = (props) => {
             }
         })
     }
-
-    const produce = items.filter(item => item.category === 'produce')
-    const filteredList = items.filter(item => item)
-
 
     function handleSort(props) {
         const nextList = [...list];
