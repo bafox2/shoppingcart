@@ -1,7 +1,7 @@
 import React from "react";
 // import styles from "../css/Header.module.css";
 import Cartitem from "./Cartitem";
-// state of cart stuff might be handled in the APP itself
+import { AnimatePresence } from "framer-motion";
 
 const Sidecart = (props) => {
     const cartItems = props.cart.map(cartItem => <Cartitem
@@ -14,7 +14,9 @@ const Sidecart = (props) => {
         <div >
             <p>this is your cart</p>
             <ul>
-                {cartItems}
+                <AnimatePresence>
+                    {cartItems}
+                </AnimatePresence>
             </ul>
         </div>
     );

@@ -1,3 +1,4 @@
+import { AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
 // import styles from "../css/Shop.module.css";
 import Item from "../components/Item"
@@ -65,7 +66,9 @@ const Shop = (props) => {
         <div>
             <h1 title="shopHeader">shop</h1>
             <Sidebar handleChange={handleFilterChange} state={filterList}></Sidebar>
-            {shoplist}
+            <AnimatePresence>
+                {shoplist}
+            </AnimatePresence>
         </div>
     );
 };
