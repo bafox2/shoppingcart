@@ -7,7 +7,6 @@ import items from "../itemData/allItems.js";
 
 const Shop = (props) => {
     // won't work because the original list has to stay available
-    const [list, setList] = useState([]);
     const [filterList, setFilterList] = React.useState({
         produce: '',
         flowers: '',
@@ -53,14 +52,18 @@ const Shop = (props) => {
         })
     }
 
-    function handleSort(props) {
-        const nextList = [...list];
+    function handleSort(props, arr) {
+        const nextList = [...arr];
         if (props.filters.sort === 'priceHigh') {
             //high to low
             nextList.sort(function (a, b) { return b.price - a.price });
+        } else if (props.filters.sort === 'priceLow') {
+            //low to high
+            nextList.sort(function (a, b) { return a.price - b.price });
         }
-        setList(nextList);
+        console.table(nextList)
     }
+    //    handleSort(props, items)
 
     return (
         <div>

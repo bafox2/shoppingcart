@@ -1,6 +1,7 @@
 Immediate
 format tests for shoppingcart
 start styling
+fix sorting, would need to add a formatter thing or change the price in the database
 add a confirm to remove?
 
 using as spiritual guide https://github.com/amielfilarca/shopping-cart/tree/main/src
