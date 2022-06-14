@@ -23,6 +23,7 @@ const Sidebar = (props) => {
                 name='sort'
                 value={props.state.sort}
             >
+                <option value=''>--</option>
                 <option value='priceHigh'>High to low</option>
                 <option value='priceLow'>Low to high</option>
             </select>

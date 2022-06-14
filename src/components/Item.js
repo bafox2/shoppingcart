@@ -14,8 +14,7 @@ const Item = (props) => {
                 <Link to={`/shop/${props.id}`} title='itemLink'>{props.name}</Link>
                 <p>add item {props.name} to cart</p>
                 <p>{props.description}</p>
-                <p>{props.amount} for</p>
-                <p>{props.price}</p>
+                <p>{props.amount} {props.unit} for ${props.price}</p>
                 <img className={styles.itemPic} alt='item' src={props.picture} />
             </div>
         </motion.div>

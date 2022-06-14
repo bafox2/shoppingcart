@@ -1,8 +1,8 @@
 Immediate
+add a confirm to remove
+fix sorting, would need to add a formatter thing or change the price in the database
 format tests for shoppingcart
 start styling
-fix sorting, would need to add a formatter thing or change the price in the database
-add a confirm to remove?
 
 using as spiritual guide https://github.com/amielfilarca/shopping-cart/tree/main/src
 design https://www.figma.com/file/mCCYfQSsRsO2mGUtMOt2xb/Plant-Shop-Website-(Practice-%23001)-(Community)?node-id=0%3A1

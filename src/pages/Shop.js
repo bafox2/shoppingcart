@@ -11,11 +11,11 @@ const Shop = (props) => {
         produce: '',
         flowers: '',
         microgreens: '',
-        sort: 'priceHigh',
+        sort: '',
         search: ''
     })
 
-    const shoplist = displayResults(filterList, items).map(item => <Item name={item.name} picture={item.imageref} price={item.price} amount={item.amount} category={item.category} key={item.name} id={item.id} role='item' />)
+    const shoplist = handleSort(props, displayResults(filterList, items)).map(item => <Item name={item.name} picture={item.imageref} price={item.price} amount={item.amount} category={item.category} unit={item.unit} key={item.name} id={item.id} role='item' />)
 
     //might want better error handling with all boxes/noboxes checked
     function displayFilter(filterConds, itemArr) {
@@ -54,16 +54,15 @@ const Shop = (props) => {
 
     function handleSort(props, arr) {
         const nextList = [...arr];
-        if (props.filters.sort === 'priceHigh') {
+        if (filterList.sort === 'priceHigh') {
             //high to low
             nextList.sort(function (a, b) { return b.price - a.price });
-        } else if (props.filters.sort === 'priceLow') {
+        } else if (filterList.sort === 'priceLow') {
             //low to high
             nextList.sort(function (a, b) { return a.price - b.price });
         }
-        console.table(nextList)
+        return (nextList)
     }
-    //    handleSort(props, items)
 
     return (
         <div>

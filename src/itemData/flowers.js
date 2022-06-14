@@ -8,8 +8,9 @@ const flowers = [
     {
         name: 'Blueberry Flower',
         category: 'flowers',
-        amount: '1 pound',
-        price: '$1/pound',
+        amount: '1',
+        unit: 'flower',
+        price: '1.33',
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/wr9vkUs4cwH9uJhh8',
         imageref: BlueberryFlower,
@@ -18,8 +19,9 @@ const flowers = [
     {
         name: 'Dianthus',
         category: 'flowers',
-        amount: '1 pound',
-        price: '$1/pound',
+        amount: '1',
+        unit: 'flower',
+        price: '1.33',
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/N1fFZ8gGta95u8mE7',
         imageref: Dianthus,
@@ -28,8 +30,9 @@ const flowers = [
     {
         name: 'Yellow Zinnias',
         category: 'flowers',
-        amount: '1 pound',
-        price: '$1/pound',
+        amount: '1',
+        unit: 'flower',
+        price: '1.33',
         description: 'Seed from Mayan origin',
         imageurl: 'https://photos.app.goo.gl/Y31EYYisJxpzeWUU7',
         imageref: YellowZiannias,
@@ -38,8 +41,9 @@ const flowers = [
     {
         name: 'Orange Zinnias',
         category: 'flowers',
-        amount: '1 pound',
-        price: '$1/pound',
+        amount: '1',
+        unit: 'flower',
+        price: '1.33',
         description: 'Seed from Mayan origin',
         imageref: OrangeZinnias,
         id: '4'
