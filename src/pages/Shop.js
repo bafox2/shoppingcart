@@ -29,8 +29,9 @@ const Shop = (props) => {
     }
 
     function displaySearch(filterList, itemArr) {
+        //might 
         const nextList = []
-        nextList.push(...itemArr.filter(item => item.name.toLowerCase().includes(filterList.search)))
+        nextList.push(...itemArr.filter(item => item.name.toLowerCase().includes(filterList.search.toLowerCase())))
         return (nextList)
     }
 
